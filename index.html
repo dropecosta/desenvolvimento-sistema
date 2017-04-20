@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sistema Icatu Hartford</title>
+	<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/daterangepicker.css">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans|Dosis:400,800" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<header>
+		<div class="container clearfix">
+			<div class="row">
+				<div class="col-sm-4 col-md-6 col-lg-3 col-xs-4">
+					<h3><img src='img/icatu.svg'></h3>
+				</div>
+				<div class="container">	
+					<div class="col-sm-8 col-md-6 col-lg-6 col-lg-offset-3 col-xs-8">
+						<div class="advanced-search">
+							<div class="input-group" id="adv-search">
+								<input type="text" class="form-control" placeholder="Buscar produto" />
+								<div class="input-group-btn">
+									<div class="btn-group" role="group">
+										<div class="dropdown dropdown-lg">
+											<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+											<div class="dropdown-menu dropdown-menu-right" role="menu">
+												<form class="form-horizontal" role="form">
+													<div class="form-group">
+														<label for="filter">Tipo de produto</label>
+														<select class="form-control">
+															<option value="0" selected>Tipo de produto um</option>
+															<option value="1">Tipo de produto dois</option>
+															<option value="2">Tipo de produto quatro</option>
+															<option value="3">Tipo de produto cinco</option>
+														</select>
+													</div>
+													<div class="form-group">
+														<label for="contain">Data de validade</label>
+														<div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width: 100%">
+															<i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;<span></span> <b class="caret"></b>
+														</div>
+													</div>
+													<button type="submit" class="btn btn-primary right"><span class="glyphicon glyphicon-search" aria-hidden="true" data-placement="bottom" data-toggle="tooltip" title="Buscar"> <span class="button-font">Buscar</span></span></button>
+												</form>
+											</div>
+										</div>
+										<button type="button" class="btn btn-primary" data-placement="bottom" data-toggle="tooltip" title="Buscar"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+									</div>
+								</div>
+							</div>
+						</div><!-- fim advanced-search -->
+						<div class="row search-xs">
+							<div class="col-xs-9 col-xs-offset-2 pull-right">
+								<div class="input-group custom-search-form">
+									<input type="text" class="form-control" placeholder="Buscar">
+									<span class="input-group-btn">
+										<button class="btn btn-primary" type="button">
+											<span class="glyphicon glyphicon-search"></span>
+										</button>
+									</span>
+								</div><!-- /input-group -->
+							</div>
+						</div>
+					</div><!-- fim grid-search -->
+				</div><!-- fim container -->
+			</div><!-- fim row -->
+		</div>
+	</header>
+	<div class="container">
+		<div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+			<!-- product -->
+			<div class="product-content product-wrap clearfix product-detail">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class="page-header page-heading">
+							<h1 class="pull-left">Produtos</h1>
+							<div class="clearfix"></div>
+						</div>
+						
+						<table class="table forum table-striped lista-produtos">
+							<thead>
+								<tr>
+									<th class="cell-stat text-left">Código</th>
+									<th class="cell-stat text-left">Produto</th>
+									<th class="cell-stat text-center hidden-xs">Tipo</th>
+									<th class="cell-stat text-center hidden-xs">Validade</th>
+									<th class="cell-stat text-center hidden-xs">Estoque</th>
+									<th class="cell-stat text-left"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="text-left"><a class="codigo-produto" href="produto.html">4274278</a></td>
+									<td class="col-xs-5 col-sm-5 col-md-2 col-lg-2"><a href="produto.html">Lorem Ipsum</td>
+									<td class="text-center hidden-xs col-lg-2">Perecível</td>
+									<td class="text-center hidden-xs">25/04/2018</td>
+									<td class="text-center hidden-xs col-md-2 col-lg-2">20</td>
+									<td class="text-center col-sm-7 col-md-5 col-lg-4">
+										<div class="btn-group pull-right" role="group" aria-label="Basic example">
+											<button type="button" class="btn btn-danger btn-responsive" data-toggle="tooltip" title="Excluir"><span class="glyphicon glyphicon-trash"></span></button>
+											<button type="button" class="btn btn-default btn-responsive" data-toggle="tooltip" title="Editar"><span class="glyphicon glyphicon-edit"></span></button>
+											<button type="button" class="btn btn-default btn-responsive" data-toggle="tooltip" title="Visualizar"><span class="glyphicon glyphicon-eye-open"></span></button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="text-left"><a class="codigo-produto" href="produto.html">4274278</a></td>
+									<td class="col-xs-5 col-sm-5 col-md-2 col-lg-2"><a href="produto.html">Lorem Ipsum</td>
+									<td class="text-center hidden-xs col-lg-2">Perecível</td>
+									<td class="text-center hidden-xs">25/04/2018</td>
+									<td class="text-center hidden-xs col-md-2 col-lg-2">20</td>
+									<td class="text-center col-sm-7 col-md-5 col-lg-4">
+										<div class="btn-group pull-right" role="group" aria-label="Basic example">
+											<button type="button" class="btn btn-danger btn-responsive" data-toggle="tooltip" title="Excluir"><span class="glyphicon glyphicon-trash"></span></button>
+											<button type="button" class="btn btn-default btn-responsive" data-toggle="tooltip" title="Editar"><span class="glyphicon glyphicon-edit"></span></button>
+											<button type="button" class="btn btn-default btn-responsive" data-toggle="tooltip" title="Visualizar"><span class="glyphicon glyphicon-eye-open"></span></button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="text-left"><a class="codigo-produto" href="produto.html">4274278</a></td>
+									<td class="col-xs-5 col-sm-5 col-md-2 col-lg-2"><a href="produto.html">Lorem Ipsum</td>
+									<td class="text-center hidden-xs col-lg-2">Perecível</td>
+									<td class="text-center hidden-xs">25/04/2018</td>
+									<td class="text-center hidden-xs col-md-2 col-lg-2">20</td>
+									<td class="text-center col-sm-7 col-md-5 col-lg-4">
+										<div class="btn-group pull-right" role="group" aria-label="Basic example">
+											<button type="button" class="btn btn-danger btn-responsive" data-toggle="tooltip" title="Excluir"><span class="glyphicon glyphicon-trash"></span></button>
+											<button type="button" class="btn btn-default btn-responsive" data-toggle="tooltip" title="Editar"><span class="glyphicon glyphicon-edit"></span></button>
+											<button type="button" class="btn btn-default btn-responsive" data-toggle="tooltip" title="Visualizar"><span class="glyphicon glyphicon-eye-open"></span></button>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="form-group">
+							<div class="col-sm-12 col-md-12 col-lg-12 col-xs-12 text-right botao-adicionar">
+								<button type="button" class="btn btn-primary btn-responsive"><span class="glyphicon glyphicon-plus"></span> Adicionar novo produto</button>
+							</div>
+						</div>
+					</div>
+				</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/daterangepicker.js"></script>
+<script src="js/select.js"></script>
+<script src="js/calendar.js"></script>
+<script src="js/tooltip.js"></script>
+</body>
+</html>

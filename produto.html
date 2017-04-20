@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sistema Icatu Hartford</title>
+	<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/daterangepicker.css">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans|Dosis:400,800" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<header>
+		<div class="container clearfix">
+			<div class="row">
+				<div class="col-sm-4 col-md-6 col-lg-3 col-xs-4">
+					<h3><img src='img/icatu.svg'></h3>
+				</div>
+				<div class="container">	
+					<div class="col-sm-8 col-md-6 col-lg-6 col-lg-offset-3 col-xs-8">
+						<div class="advanced-search">
+							<div class="input-group" id="adv-search">
+								<input type="text" class="form-control" placeholder="Buscar produto" />
+								<div class="input-group-btn">
+									<div class="btn-group" role="group">
+										<div class="dropdown dropdown-lg">
+											<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+											<div class="dropdown-menu dropdown-menu-right" role="menu">
+												<form class="form-horizontal" role="form">
+													<div class="form-group">
+														<label for="filter">Tipo de produto</label>
+														<select class="form-control">
+															<option value="0" selected>Tipo de produto um</option>
+															<option value="1">Tipo de produto dois</option>
+															<option value="2">Tipo de produto quatro</option>
+															<option value="3">Tipo de produto cinco</option>
+														</select>
+													</div>
+													<div class="form-group">
+														<label for="contain">Data de validade</label>
+														<div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width: 100%">
+															<i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;<span></span> <b class="caret"></b>
+														</div>
+													</div>
+													<button type="submit" class="btn btn-primary right"><span class="glyphicon glyphicon-search" aria-hidden="true" data-placement="bottom" data-toggle="tooltip" title="Buscar"> <span class="button-font">Buscar</span></span></button>
+												</form>
+											</div>
+										</div>
+										<button type="button" class="btn btn-primary" data-placement="bottom" data-toggle="tooltip" title="Buscar"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+									</div>
+								</div>
+							</div>
+						</div><!-- fim advanced-search -->
+						<div class="row search-xs">
+							<div class="col-xs-9 col-xs-offset-2 pull-right">
+								<div class="input-group custom-search-form">
+									<input type="text" class="form-control" placeholder="Buscar">
+									<span class="input-group-btn">
+										<button class="btn btn-primary" type="button">
+											<span class="glyphicon glyphicon-search"></span>
+										</button>
+									</span>
+								</div><!-- /input-group -->
+							</div>
+						</div>
+					</div><!-- fim grid-search -->
+				</div><!-- fim container -->
+			</div><!-- fim row -->
+		</div>
+	</header>
+	<div class="container">
+		<div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+			<!-- product -->
+			<div class="product-content product-wrap clearfix product-detail">
+				<div class="row">
+					<div class="col-md-6 col-sm-12 col-xs-12"><!-- carrosel imagens -->
+						<div class="product-image"> 
+							<div id="myCarousel-2" class="carousel slide">
+								<ol class="carousel-indicators">
+									<li data-target="#myCarousel-2" data-slide-to="0" class=""></li>
+									<li data-target="#myCarousel-2" data-slide-to="1" class="active"></li>
+									<li data-target="#myCarousel-2" data-slide-to="2" class=""></li>
+								</ol>
+								<div class="carousel-inner">
+									<!-- Slide 1 -->
+									<div class="item active">
+										<img src="img/produto.jpg" alt="">
+									</div>
+									<!-- Slide 2 -->
+									<div class="item">
+										<img src="img/produto.jpg" alt="">
+									</div>
+									<!-- Slide 3 -->
+									<div class="item">
+										<img src="img/produto.jpg" alt="">
+									</div>
+								</div>
+								<a class="left carousel-control" href="#myCarousel-2" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a>
+								<a class="right carousel-control" href="#myCarousel-2" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
+							</div>
+						</div> <!-- fim product-image -->
+					</div>
+					<div class="col-md-6 col-sm-12 col-xs-12"><!-- descrição produto -->
+						<h1 class="name">Lorem ipsum dolor</h1>
+						<hr>
+						<div class="product-info">
+							<ul>
+								<li><a href="#">Tipo<span>Perecível</span></a></li>
+								<li><a href="#">Validade<span>25/11/2018</span></a></li>
+							</ul>
+							<p class="text-primary"><strong>Estoque:</strong> <span class="badge valor-unidade">16 unidades</span></p>
+						</div>
+						<hr>
+						<div>
+							<h2>Sobre o produto</h2>
+							<p>Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend.</p>
+						</div>
+						<hr>
+						<div class="form-group col-xs-12">
+							<a href="index.html" class="btn btn-white btn-default btn-md btn-responsive"><span class="glyphicon glyphicon-menu-left"></span> Listar Produtos</a>
+							<a href="#" class="btn btn-white btn-default btn-md btn-responsive"><span class="glyphicon glyphicon-edit"></span> Editar</a>
+							<a href="#" class="btn btn-white btn-danger btn-md btn-responsive"><span class="glyphicon glyphicon-trash"></span> Excluir</a>
+						</div>
+					</div><!-- fim coluna informacao -->
+				</div><!-- fim row -->
+			</div><!-- fim produto -->
+		</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/daterangepicker.js"></script>
+<script src="js/select.js"></script>
+<script src="js/calendar.js"></script>
+<script src="js/tooltip.js"></script>
+</body>
+</html>

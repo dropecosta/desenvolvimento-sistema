@@ -1,0 +1,373 @@
+/* reset */
+*,
+*:after,
+*:before {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+}
+
+body{
+  margin-top:1em;
+  background-color: #F9F9F9;
+  font-size: 16px;
+}
+
+h1 {
+  font-family: 'Dosis', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 2.875em;
+  font-size: 2.5em;
+  margin: 0 0 1.4375em 0;
+}
+
+h2 {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 800;
+  font-size: 1.125em;
+  line-height: 1.4375em;
+  margin: 0 0 1.25em 0;
+  color: #666;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.625em;
+  margin: 0 0 1.4375em 0;
+}
+
+.lista-produtos a {
+  font-family: 'Dosis', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.25em;
+  line-height: 2.375em;
+  color: #000;
+}
+
+.lista-produtos a:hover{
+  text-decoration: none;
+}
+
+.lista-produtos a.codigo-produto{
+  font-weight: 600;
+  font-size: 1em;
+  color: #337ab7;
+
+}
+.lista-produtos a.codigo-produto:hover{
+  text-decoration: underline;
+}
+
+/* -- Header -- */
+
+header {
+  width: 100%;
+  height: 5em;
+  margin-top: -0.9375em;
+  top: 0;
+  left: 0;
+}
+
+header h3 {
+  display: inline-block;
+  float: left;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.875em;
+  color: white;
+  font-weight: 400;
+  line-height: 2.6em;
+  margin:0 0 0 0.5em; 
+}
+
+header nav {
+  display: inline-block;
+  float: right; 
+}
+
+header nav a {
+  line-height: 5em;
+  margin-right: 1.25em;
+  color: #9fdbfc;
+  font-weight: 700;
+  font-size: 1.125em;
+}
+
+/*-- Product --*/
+
+h1 {
+  color:#222;
+  font-size: 1.5em;
+  letter-spacing: 0.0625em;
+}
+
+.product-content {
+  border: 0.0625em solid #dfe5e9;
+  margin-bottom: 1.25em;
+  background: #fff;
+}
+
+.product-content .product-image {
+  background-color: #fff;
+  display: block;
+  min-height: 14.875em; /*14.875em*/
+  overflow: hidden;
+  position: relative;
+}
+
+.product-content {
+  border-bottom: 0.0625em solid #dfe5e9;
+  position: relative;
+  background: #fff;
+}
+
+.product-detail {
+  padding: 1em;
+}
+
+.product-image .left,
+.product-image .right {
+  background: none!important;
+}
+
+.product-detail .product-info ul li:not(first-child) {
+  margin-left: -0.2em;
+}
+
+.product-detail .product-info ul li {
+  display: inline-block;
+  background-color: #f9f9f9;
+  border: 0.0625em solid #ccc;
+  padding: 0.8em 1.2em
+}
+
+.product-detail .product-info ul li a {
+  text-align: left;
+  color: #6d7a83;
+  line-height: 0.875em;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.625em;
+  margin: 0 0 1.4375em 0;
+}
+
+.product-detail .product-info ul li a span {
+  display: block;
+  color: #000;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 500;
+  font-size: 1.5em;
+  line-height: 1.4375em;
+  margin: 0 0 1.25em 0;
+}
+
+.product-detail h1 {
+  margin: 0;
+}
+
+.product-detail hr {
+  border-top: 0.0625em dotted #cecece;
+  
+}
+
+.product-detail .product-info {
+  margin-top: 0.625em
+}
+
+.product-detail .product-info ul {
+  padding-left: 0
+}
+
+/* -- Search -- */
+
+.advanced-search{
+  display: inline-block;
+  float: right;
+  margin-top: 1.6em;
+  margin-right: -0.3125em;
+}
+
+.dropdown.dropdown-lg .dropdown-menu {
+  margin-top: -0.0625em;
+  padding: 0.9375em 1.25em;
+  width: 31.25em;
+}
+
+.input-group-btn .btn-group {
+  display: flex !important;
+}
+
+.btn-group .btn {
+  border-radius: 0;
+  margin-left: -0.0625em;
+  float: right;
+}
+.btn-group .btn span.button-font{
+  font-family: 'Open Sans', sans-serif;
+}
+.btn-group .btn:last-child {
+  border-top-right-radius: 0.25em;
+  border-bottom-right-radius: 0.25em;
+}
+.btn-group .form-horizontal .btn[type="submit"] {
+  border-top-left-radius: 0.25em;
+  border-bottom-left-radius: 0.25em;
+}
+.form-horizontal .form-group {
+  margin-left: 0;
+  margin-right: 0;
+}
+.form-group .form-control:last-child {
+  border-top-left-radius: 0.25em;
+  border-bottom-left-radius: 0.25em;
+}
+
+.botao-adicionar{
+  margin-left: 0.5em;
+}
+
+/* -- Tabela --*/
+.forum.table > tbody > tr > td {
+  vertical-align: middle;
+}
+
+.forum .fa {
+  width: 1em;
+  text-align: center;
+}
+
+.forum.table th.cell-stat {
+  width: 6em;
+}
+
+.forum.table th.cell-stat-2x {
+  width: 14em;
+}
+
+@media (max-width: 29.9375em) {
+
+  .advanced-search {
+    display: none;
+  }
+
+  .custom-search-form{
+    margin-top: 1.5625em;
+    margin-right:-0.3125em;
+
+  }
+
+  .btn-responsive {
+    width: 100%;
+    margin: 0.3125em 0;
+  }
+
+  .product-detail .product-info ul li {
+    width: 49%;
+    margin-bottom:0.625em;
+  }
+
+  .product-detail .product-info ul li:last-child {
+    float: right;
+  }
+
+  .carousel{
+    margin-bottom: 1.25em;
+  }
+
+}
+
+@media (min-width: 30em) and (max-width: 48em) {
+
+  .advanced-search {
+    display: none;
+  }
+
+  .custom-search-form{
+    margin-top: 1.5625em;
+    margin-right:-0.3125em;
+  }
+
+  .btn-responsive {
+    width: 100%;
+    margin: 0.3125em 0;
+  }
+
+  .carousel{
+    margin-bottom: 1.875em;
+  }
+
+  .product-detail .product-info ul li{
+   width: 9.375em;
+ }
+
+ .breadcrumb {
+    display: none;
+  }
+
+  .product-detail .product-info ul li {
+    width: 49%;
+    margin-bottom:0.625em;
+  }
+
+  .product-detail .product-info ul li:last-child {
+    float: right;
+  }
+
+}
+
+@media (min-width: 48.0625em) and (max-width: 61.9375em) {
+  .advanced-search {
+    width: 100%;
+
+  }
+
+  .btn-responsive {
+    width: 32%;
+    margin: 0.3125em 0;
+  }
+
+  .dropdown.dropdown-lg {
+    position: static !important;
+  }
+  .dropdown.dropdown-lg .dropdown-menu {
+    min-width: 31.25em;
+  }
+
+
+  .btn-responsive {
+    padding:0.25em 0.5625em;
+    font-size:90%;
+    line-height: 1.2;
+  }
+
+  .carousel{
+    margin-bottom: 2.5em;
+  } 
+
+
+  .search-xs{
+    display: none;
+  }
+
+}
+
+@media (min-width: 62em) {
+ .advanced-search {
+    margin-left: 0.5em;
+  }
+
+  /* -- Search -- */
+  table.lista-produtos{
+    width: 100%;
+  }
+
+  .search-xs{
+    display: none;
+  }
+
+}
